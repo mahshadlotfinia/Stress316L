@@ -10,17 +10,30 @@ https://github.com/mahshadlotfinia/Mathematical-Simulation-Part-of-the-Master-th
 Since the volume of the material passing through each vertical plane per unit time is the same, the speed of the strip steadily increases as it moves through the roll gap. On the entry side, the peripheral speed of the rolls is higher than that of the strip, and consequently the frictional forces draw the strip into the roll gap. On the exit side, the strip moves faster than the rolls, and the frictional forces therefore oppose the delivery of the strip. It follows that there is a neutral point N somewhere on the arc of contact where the strip moves at the same speed as that of the rolls.
 1-3 Equation of Equilibrium
 It is assumed at the outset that each element of the strip is uniformly compressed between the rolls while passing through the roll gap. The vertical compression of the strip is accompanied by a horizontal force which is increasingly compressive as the neutral point is approached from either side. the equation of equilibrium may be written as:
+
 d/dϕ (hp)=2qR^՛ (sinϕ∓µcosϕ)  
+
 Where the upper sign applies to the exit side and the lower sign to the entry side of the neutral point. We now assume that the material is everywhere plastic between the planes of entry and exit, and the principal compressive stresses at each point on a vertical section are approximately equal to p and q. Then the yield criterion may be written in the form:
+
 q-p =2k
+
 Where the shear yield stress k generally varies along the arc of contact. The value of 2k at a generic point on the arc of contact is approximately equal to the ordinate of the compressive stress–strain curve, obtained under plane strain condition, corresponding to an abscissa equal to ln(h1/h). Alternatively, the variation of the yield stress can be estimated by rolling a length of the strip in a succession of passes and carrying out a tensile test at the end of each pass. This gives the tensile yield stress √3k as a function of the thickness ratio h/h1. since the angle of contact is small, we arrive at the governing equation:
+
 d/dϕ (q-2k)∓2μR^՛ q=4kR^՛ ϕ
+
 d/dϕ (q-2k)∓2μR^՛ q=4kR^՛ ϕ	1-3
+
 Where:
+
 h=h_2+2R^՛ (1-cos⁡〖ϕ)≃h_2 〗+R^՛ ϕ^2
+
 1-4 Finite Difference Formulation
 In order to solve 1-3 equation by Finite Difference method, 3-5 equation is obtained by Forward Difference approach for the exit side (when  p=0  then 2k=q_0). By using the initial and final strip thickness in 1-4 equation  ϕ_1 for first step is obtained.
+
 (h_i (q_(i+1)-2k_(i+1)-q_i+2k_i))/(ϕ_(i+1)-ϕ_i )+2μRq_0=4kRϕ_i
+
 Like the exist side the Forward Difference approach is used for entry side. The equation of entry side may be written as below:
+
 (h_i (q_(i+1)-2k_(i+1)))/ϕ_(i+1) -2μRq_0=0
+
 After that, in every thickness the amount of pressure update until the final thickness. When the amount of calculated pressure in tow mentioned side are equal, it can be assumed as Neutral point pressure at corresponded degree. 
