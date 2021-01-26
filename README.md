@@ -47,7 +47,7 @@ After that, in every thickness the amount of pressure update until the final thi
 
 In any stage of thickness reduction, the flow stress is different. Therefore, artificial neural network (ANN) is utilized for calculating the flow stress. By conducting mechanical tensile test in different strain rate and temperature, the needed data have been obtained. 
 
-https://github.com/mahshadlotfinia/Mathematical-Simulation-Part-of-the-Master-thesis./issues/3#issue-794027014
+![](https://github.com/mahshadlotfinia/Mathematical-Simulation-Part-of-the-Master-thesis./issues/3#issue-794027014)
 
 Back propagation method and linear function have been used for creating artificial neutral network while:
 
