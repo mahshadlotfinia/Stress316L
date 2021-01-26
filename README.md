@@ -1,9 +1,11 @@
 # Mathematical-Simulation-Part-of-the-Master-thesis.
 Numerical Analysis of Roll Deflection during Plate Rolling using Finite Element Methods &amp; Artificial
 1-1 Introduction
+
 In Mathematical Simulation Part of my Master thesis, the work-roll deflection during multi-pass rolling operations was predicted employing a combined model using finite element method, artificial neural network (ANN) and finite difference scheme. The ANN modeling was utilized for calculating the flow stress of the steel being rolled while the mean pressure was calculated based on cold rolling theories coupled with the finite difference approach. Finally, the work-roll deflection was determined by means of the predicted mean roll pressure and finite element formulation.  It was found that that an increase in the number of passes as well as reducing rolling temperature led to an increase in work-roll the deflection.
 
 1-2 Cold Rolling of Strips
+
 We shall investigate the process in which a metal sheet or strip is reduced in thickness by passing it between a pair of cylindrical rolls shaving their axes parallel to one another. In cold rolling, the radius R of the rolls is usually more than 50 times the initial strip thickness. If the width of the strip is at least ﬁve times the length of the arc of contact, the non-plastic material prevents the lateral spread, and the deformation takes place effectively under plane strain condition. Due to the pressure of the rolled stock, the rolls are themselves ﬂattened so as to increase the arc of contact by as much as 20 to 25 percent or even more. It will be assumed, for simplicity, that the part of the rolls in contact with the strip is deformed into a cylindrical surface of a larger radius R/.
 
 https://github.com/mahshadlotfinia/Mathematical-Simulation-Part-of-the-Master-thesis./issues/1#issue-794019814
@@ -28,6 +30,7 @@ Where:
 h=h_2+2R^՛ (1-cos⁡〖ϕ)≃h_2 〗+R^՛ ϕ^2
 
 1-4 Finite Difference Formulation
+
 In order to solve 1-3 equation by Finite Difference method, 3-5 equation is obtained by Forward Difference approach for the exit side (when  p=0  then 2k=q_0). By using the initial and final strip thickness in 1-4 equation  ϕ_1 for first step is obtained.
 
 (h_i (q_(i+1)-2k_(i+1)-q_i+2k_i))/(ϕ_(i+1)-ϕ_i )+2μRq_0=4kRϕ_i
@@ -37,3 +40,8 @@ Like the exist side the Forward Difference approach is used for entry side. The 
 (h_i (q_(i+1)-2k_(i+1)))/ϕ_(i+1) -2μRq_0=0
 
 After that, in every thickness the amount of pressure update until the final thickness. When the amount of calculated pressure in tow mentioned side are equal, it can be assumed as Neutral point pressure at corresponded degree. 
+
+1-5 Artificial Neural Network
+
+In any stage of thickness reduction, the flow stress is different. Therefore, artificial neural network (ANN) is utilized for calculating the flow stress. By conducting mechanical tensile test in different strain rate and temperature, the needed data have been obtained. 
+
