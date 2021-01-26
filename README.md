@@ -1,2 +1,9 @@
 # Mathematical-Simulation-Part-of-the-Master-thesis.
 Numerical Analysis of Roll Deflection during Plate Rolling using Finite Element Methods &amp; Artificial
+1-1 Introduction
+In Mathematical Simulation Part of my Master thesis, the work-roll deflection during multi-pass rolling operations was predicted employing a combined model using finite element method, artificial neural network (ANN) and finite difference scheme. The ANN modeling was utilized for calculating the flow stress of the steel being rolled while the mean pressure was calculated based on cold rolling theories coupled with the finite difference approach. Finally, the work-roll deflection was determined by means of the predicted mean roll pressure and finite element formulation.  It was found that that an increase in the number of passes as well as reducing rolling temperature led to an increase in work-roll the deflection.
+
+1-2 Cold Rolling of Strips
+We shall investigate the process in which a metal sheet or strip is reduced in thickness by passing it between a pair of cylindrical rolls shaving their axes parallel to one another. In cold rolling, the radius R of the rolls is usually more than 50 times the initial strip thickness. If the width of the strip is at least ﬁve times the length of the arc of contact, the non-plastic material prevents the lateral spread, and the deformation takes place effectively under plane strain condition. Due to the pressure of the rolled stock, the rolls are themselves ﬂattened so as to increase the arc of contact by as much as 20 to 25 percent or even more. It will be assumed, for simplicity, that the part of the rolls in contact with the strip is deformed into a cylindrical surface of a larger radius R/.
+
+https://github.com/mahshadlotfinia/Mathematical-Simulation-Part-of-the-Master-thesis./issues/1#issue-794019814
