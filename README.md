@@ -1,5 +1,7 @@
 # Mathematical-Simulation-Part-of-the-Master-thesis.
+
 Numerical Analysis of Roll Deflection during Plate Rolling using Finite Element Methods &amp; Artificial
+
 1-1 Introduction
 
 In Mathematical Simulation Part of my Master thesis, the work-roll deflection during multi-pass rolling operations was predicted employing a combined model using finite element method, artificial neural network (ANN) and finite difference scheme. The ANN modeling was utilized for calculating the flow stress of the steel being rolled while the mean pressure was calculated based on cold rolling theories coupled with the finite difference approach. Finally, the work-roll deflection was determined by means of the predicted mean roll pressure and finite element formulation.  It was found that that an increase in the number of passes as well as reducing rolling temperature led to an increase in work-roll the deflection.
@@ -48,4 +50,23 @@ In any stage of thickness reduction, the flow stress is different. Therefore, ar
 https://github.com/mahshadlotfinia/Mathematical-Simulation-Part-of-the-Master-thesis./issues/3#issue-794027014
 
 Back propagation method and linear function have been used for creating artificial neutral network while:
+
+https://github.com/mahshadlotfinia/Mathematical-Simulation-Part-of-the-Master-thesis./issues/4#issue-794028300
+
+Finally, the below equation can be used for calculating the mean pressure that is going to be used for the work-roll deflection during multi-pass rolling operations.
+
+P ̅=(∫_α^0▒〖q dϕ〗)/Δϕ
+
+Finally, the work-roll deflection was determined by means of the predicted mean roll pressure and finite element formulation (Galerkin) as below:
+
+d^2/〖dx〗^2  (EI (d^2 w )/(dx^2 ))=p(x)
+
+Where:
+
+I=(πd^4)/64
+
+1-6 Finite Element Formulation
+Cantilevered Beam is used as Boundary condition. 
+
+K^e a^e=f^e               
 
