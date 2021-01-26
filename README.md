@@ -1,6 +1,7 @@
 # Mathematical-Simulation-Part-of-the-Master-thesis.
 
-### By [Mahshad Lotfinia/مهشاد لطفی نیا](https://github.com/mahshadlotfinia) | 
+### By [Mahshad Lotfinia](https://github.com/mahshadlotfinia) | مهشاد لطفی نیا
+ 
 
 Numerical Analysis of Roll Deflection during Plate Rolling using Finite Element Methods &amp; Artificial
 
