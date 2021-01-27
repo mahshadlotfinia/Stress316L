@@ -1,7 +1,18 @@
+%Created on October 2020.
+
+%@author: Mahshad Lotfinia <mahshad.lotfinia@alum.sharif.edu>
+%https://github.com/mahshadlotfinia/
+%%
+
+
 clear all
 clc
 close all
+
+
+
 %% 01 - From 5.77 to 0 Backward (and Forward: Uncomment the upper q formula and comment the lower one)
+
 h1=input('Enter First Thickness: ');
 h2_577=input('Enter Last Thickness: ');%h2
 R_577=input('Enter Radios Of Roller: ');
@@ -13,7 +24,9 @@ h_577(1)=h2_577+(2*R_577*(1-cos(pi()*(fi_577(1)/180)))); %h0
 sigma_577(1)=input('Enter Yield Point Stress: ');%sigma0
 k_577(1)=sigma_577(1)/(3^.5); %k0
 q_577(1)=2*(sigma_577(1)/(3^.5)); %q0
-%% ann
+
+
+%% ANN
 xneural=xlsread('xneural.xlsx');
 yneural=xlsread('yneural.xlsx');
 x = xneural';
@@ -30,6 +43,8 @@ e = gsubtract(t,y);
 performance = perform(net,t,y);
 view(net);
 %%
+
+
 for i=2:numel(fi_577)
     h_577(i)=h2_577+(2*R_577*(1-cos(pi()*(fi_577(i)/180))));
     ept_577(i)=log(h_577(i)/h_577(1));
@@ -42,7 +57,9 @@ for i=2:numel(fi_577)
     q_577(i)=(-1)*((((4*k_577(i-1)*R_577*fi_577(i-1)*(pi()/180))-(2*p_577*R_577*q_577(i-1)))*((fi_577(i-1)-fi_577(i))*(pi()/180))/h_577(i-1))+(2*k_577(i-1))-q_577(i-1)-(2*k_577(i)));
 end
 
+
 %% 02 - From 0 to 5.77 Forward (and Backward: Uncomment the lower q formula and comment the upper one)
+
 h2_0=h2_577; %h2
 R_0=R_577;
 p_0=p_577;
@@ -66,7 +83,10 @@ for i=2:numel(fi_0)
     q_0(i)=(-1)*((((4*k_0(i-1)*R_0*fi_0(i-1)*(pi()/180))+(2*p_0*R_577*q_0(i-1)))*((fi_0(i-1)-fi_0(i))*(pi()/180))/h_0(i-1))+(2*k_0(i-1))-q_0(i-1)-(2*k_0(i)));
 
 end
+%%
+
 %% mean pressure
+
 numberq=numel(q_577);
 numberfi=numel(fi_577);
 
@@ -78,10 +98,12 @@ for mm=1:numberq
 end 
 mean;
 mean_pressure=mean/phi;
+%%
 
 
 
 %% 02 - Visualization
+
    figure('units','centimeters','outerposition',[5 5 12.5 12.5],'color','w','paperpositionmode','auto','resize','off','visible','on','PaperType','A4','PaperOrientation','Portrait','PaperUnits','Centimeters','PaperPosition',[2.5, 2.5, 10, 18],'PaperPositionMode','auto'); 
                  set(gca,'fontname','Times New Roman','FontSize',12,'LineWidth',0.8,'box','off','color','none');
                  xlim([0, 6]);

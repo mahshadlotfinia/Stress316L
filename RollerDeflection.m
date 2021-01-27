@@ -1,3 +1,10 @@
+%Created on October 2020.
+% roll deflection calculation using Finite Element method.
+
+%@author: Mahshad Lotfinia <mahshad.lotfinia@alum.sharif.edu>
+%https://github.com/mahshadlotfinia/
+%%
+
 clc
 clear
 close all
