@@ -2,7 +2,7 @@
 
 
 
-### By [Mahshad Lotfinia](https://github.com/mahshadlotfinia) et al.
+### By [Mahshad Lotfinia](https://github.com/mahshadlotfinia) and [Soroosh Tayebi Arasteh](https://github.com/starasteh)
  
 
 
